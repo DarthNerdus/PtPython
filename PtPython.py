@@ -62,11 +62,11 @@ def main(argv):
    try:
       opts, args = getopt.getopt(argv,"hi:")
    except getopt.GetoptError:
-      print 'PtpImgUrl.py -i <Image URL>'
+      print 'PtPython.py -i <Image URL>'
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':
-         print 'PtpImgUrl.py -i <Image URL>'
+         print 'PtPython.py -i <Image URL>'
          sys.exit()
       elif opt in ("-i"):
          inputfile = arg
