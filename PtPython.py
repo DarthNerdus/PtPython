@@ -15,7 +15,7 @@ class PtpImg:
         # Get image extension from the URL and fall back to ptpimg.me's rehosting if it's not JPG or PNG.
         fileName, extension = os.path.splitext( imageUrl )
         extension = extension.lower()
-        if ( extension != ".jpg" and extension != ".jpeg" and extension != ".png" ):
+        if ( extension != ".jpg" and extension != ".jpeg" and extension != ".png" and extension != ".gif" ):
             raise Exception("Incompatible URL")
 
         return PtpImg.__UploadInternal( logger, None, imageUrl )
